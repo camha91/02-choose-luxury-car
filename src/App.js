@@ -1,7 +1,12 @@
 import "./App.css";
+import ChooseTeslaS from "./component/ChooseTeslaS";
 
 function App() {
-  return <div className="app">Choose Luxury Car</div>;
+  return (
+    <div className="app">
+      <ChooseTeslaS />
+    </div>
+  );
 }
 
 export default App;
