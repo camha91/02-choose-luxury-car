@@ -11,12 +11,26 @@ import blueIcon from "../assets/icons/icon-blue.jpg";
 import redIcon from "../assets/icons/icon-red.jpg";
 
 export default class ChooseTeslaS extends Component {
+  state = {
+    imgProduct: whiteTesla,
+  };
+
+  renderTeslaS = (imgNewProduct) => {
+    this.setState({
+      imgProduct: imgNewProduct,
+    });
+  };
+
   render() {
     return (
       <div className="container-fluid">
         <div className="row">
           <div className="col-7">
-            <img style={{ width: "100%" }} src={whiteTesla} alt="white_tesla" />
+            <img
+              style={{ width: "100%" }}
+              src={this.state.imgProduct}
+              alt="white_tesla"
+            />
           </div>
           <div className="col-5">
             <div className="card text-dark">
@@ -24,7 +38,9 @@ export default class ChooseTeslaS extends Component {
               <div className="card-body">
                 <div
                   className="row border border-link pt-2 pb-2 mt-2"
-                  onClick={() => {}}
+                  onClick={() => {
+                    this.renderTeslaS(whiteTesla);
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img className="col-3" src={whiteIcon} alt="silver_icon" />
@@ -35,7 +51,9 @@ export default class ChooseTeslaS extends Component {
                 </div>
                 <div
                   className="row border border-link pt-2 pb-2 mt-2"
-                  onClick={() => {}}
+                  onClick={() => {
+                    this.renderTeslaS(blackTesla);
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img className="col-3" src={blackIcon} alt="black_icon" />
@@ -46,7 +64,9 @@ export default class ChooseTeslaS extends Component {
                 </div>
                 <div
                   className="row border border-link pt-2 pb-2 mt-2"
-                  onClick={() => {}}
+                  onClick={() => {
+                    this.renderTeslaS(steelTesla);
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img className="col-3" src={steelIcon} alt="steel_icon" />
@@ -57,7 +77,9 @@ export default class ChooseTeslaS extends Component {
                 </div>
                 <div
                   className="row border border-link pt-2 pb-2 mt-2"
-                  onClick={() => {}}
+                  onClick={() => {
+                    this.renderTeslaS(blueTesla);
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img className="col-3" src={blueIcon} alt="blue_icon" />
@@ -68,7 +90,9 @@ export default class ChooseTeslaS extends Component {
                 </div>
                 <div
                   className="row border border-link pt-2 pb-2 mt-2"
-                  onClick={() => {}}
+                  onClick={() => {
+                    this.renderTeslaS(redTesla);
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <img className="col-3" src={redIcon} alt="red_icon" />
@@ -80,6 +104,17 @@ export default class ChooseTeslaS extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row">
+          <div className="col-7">
+            <div className="card text-dark">
+              <div className="card-body">
+                <h4 className="card-title">Title</h4>
+                <p className="card-text">Text</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-5">Wheels</div>
         </div>
       </div>
     );
