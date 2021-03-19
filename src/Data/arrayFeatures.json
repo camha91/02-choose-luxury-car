@@ -1,114 +1,122 @@
 [
-    {
-      "id": 1,
-      "title": "Crystal Black",
-      "type": "Pearl",
-      "img": "./images/icons/icon-black.jpg",
-      "srcImg": "images-black/images-black-1/",
-      "color": "Black",
-      "price": "19,550",
-      "engineType": "In-Line 4-Cylinder",
-      "displacement": "1996 cc",
-      "horsepower": "158 @ 6500 rpm",
-      "torque": "138 lb-ft @ 4200 rpm",
-      "redline": "6700 rpm",
-      "wheels": [
-        {
-          "idWheel": 1,
-          "srcImg": "images-black/images-black-1/"
-        },
-        {
-          "idWheel": 2,
-          "srcImg": "images-black/images-black-2/"
-        },
-        {
-          "idWheel": 3,
-          "srcImg": "images-black/images-black-3/"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Modern Steel",
-      "type": "Metallic",
-      "img": "./images/icons/icon-steel.jpg",
-      "srcImg": "images-steel/images-steel-1/",
-      "color": "Steel",
-      "price": "20,550",
-      "engineType": "In-Line 4-Cylinder",
-      "displacement": "1996 cc",
-      "horsepower": "158 @ 6500 rpm",
-      "torque": "138 lb-ft @ 4200 rpm",
-      "redline": "6700 rpm",
-      "wheels": [
-        {
-          "idWheel": 1,
-          "srcImg": "images-steel/images-steel-1/"
-        },
-        {
-          "idWheel": 2,
-          "srcImg": "images-steel/images-steel-2/"
-        },
-        {
-          "idWheel": 3,
-          "srcImg": "images-steel/images-steel-3/"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Lunar Silver",
-      "type": "Metallic",
-      "img": "./images/icons/icon-silver.jpg",
-      "srcImg": "images-silver/images-silver-1/",
-      "color": "Silver",
-      "price": "21,550",
-      "engineType": "In-Line 4-Cylinder",
-      "displacement": "1996 cc",
-      "horsepower": "158 @ 6500 rpm",
-      "torque": "138 lb-ft @ 4200 rpm",
-      "redline": "6700 rpm",
-      "wheels": [
-        {
-          "idWheel": 1,
-          "srcImg": "images-silver/images-silver-1/"
-        },
-        {
-          "idWheel": 2,
-          "srcImg": "images-silver/images-silver-2/"
-        },
-        {
-          "idWheel": 3,
-          "srcImg": "images-silver/images-silver-3/"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Rallye Red",
-      "type": "Metallic",
-      "img": "./images/icons/icon-red.jpg",
-      "srcImg": "images-red/images-red-1/",
-      "color": "Red",
-      "price": "22,550",
-      "engineType": "In-Line 4-Cylinder",
-      "displacement": "1996 cc",
-      "horsepower": "158 @ 6500 rpm",
-      "torque": "138 lb-ft @ 4200 rpm",
-      "redline": "6700 rpm",
-      "wheels": [
-        {
-          "idWheel": 1,
-          "srcImg": "images-red/images-red-1/"
-        },
-        {
-          "idWheel": 2,
-          "srcImg": "images-red/images-red-2/"
-        },
-        {
-          "idWheel": 3,
-          "srcImg": "images-red/images-red-3/"
-        }
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Pearl White",
+    "type": "Multi-Coat",
+    "img": "./images/icons/icons/icon-white.jpg",
+    "srcImg": "images-white/images-white-1/",
+    "color": "White",
+    "price": "112,990",
+    "engineType": "Tri Motor All-Wheel Drive",
+    "range": "390 mi",
+    "peakPower": "1,020 hp",
+    "acceleration": "1.99 s 0-60 mph",
+    "topSpeed": "200 mph",
+    "wheels": [
+      {
+        "idWheel": 1,
+        "srcImg": "images-white/images-white-1/"
+      },
+      {
+        "idWheel": 2,
+        "srcImg": "images-white/images-white-2/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Black",
+    "type": "Solid",
+    "img": "./images/icons/icons/icon-black.jpg",
+    "srcImg": "images-black/images-black-1/",
+    "color": "Black",
+    "price": "112,990",
+    "engineType": "Tri Motor All-Wheel Drive",
+    "range": "390 mi",
+    "peakPower": "1,020 hp",
+    "acceleration": "1.99 s 0-60 mph",
+    "topSpeed": "200 mph",
+    "wheels": [
+      {
+        "idWheel": 1,
+        "srcImg": "images-black/images-black-1/"
+      },
+      {
+        "idWheel": 2,
+        "srcImg": "images-black/images-black-2/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Midnight Silver",
+    "type": "Metallic",
+    "img": "./images/icons/icons/icon-steel.jpg",
+    "srcImg": "images-steel/images-steel-1/",
+    "color": "Steel",
+    "price": "112,990",
+    "engineType": "Tri Motor All-Wheel Drive",
+    "range": "390 mi",
+    "peakPower": "1,020 hp",
+    "acceleration": "1.99 s 0-60 mph",
+    "topSpeed": "200 mph",
+    "wheels": [
+      {
+        "idWheel": 1,
+        "srcImg": "images-steel/images-steel-1/"
+      },
+      {
+        "idWheel": 2,
+        "srcImg": "images-steel/images-steel-2/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Deep Blue",
+    "type": "Metallic",
+    "img": "./images/icons/icons/icon-blue.jpg",
+    "srcImg": "images-blue/images-blue-1/",
+    "color": "Blue",
+    "price": "112,990",
+    "engineType": "Tri Motor All-Wheel Drive",
+    "range": "390 mi",
+    "peakPower": "1,020 hp",
+    "acceleration": "1.99 s 0-60 mph",
+    "topSpeed": "200 mph",
+    "wheels": [
+      {
+        "idWheel": 1,
+        "srcImg": "images-blue/images-blue-1/"
+      },
+      {
+        "idWheel": 2,
+        "srcImg": "images-blue/images-blue-2/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Red",
+    "type": "Multi-Coat",
+    "img": "./images/icons/icons/icon-red.jpg",
+    "srcImg": "images-red/images-red-1/",
+    "color": "Red",
+    "price": "112,990",
+    "engineType": "Tri Motor All-Wheel Drive",
+    "range": "390 mi",
+    "peakPower": "1,020 hp",
+    "acceleration": "1.99 s 0-60 mph",
+    "topSpeed": "200 mph",
+    "wheels": [
+      {
+        "idWheel": 1,
+        "srcImg": "images-red/images-red-1/"
+      },
+      {
+        "idWheel": 2,
+        "srcImg": "images-red/images-red-2/"
+      }
+    ]
+  }
+]
