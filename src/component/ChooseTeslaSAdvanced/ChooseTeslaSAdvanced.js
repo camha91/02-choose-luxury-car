@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./ChooseTeslaSAdvanced.css";
 import dataFeatures from "../../Data/arrayFeatures.json";
 import dataWheels from "../../Data/wheels.json";
+import "./ChooseTeslaSAdvanced.css";
 
 export default class ChooseTeslaSAdvanced extends Component {
   // Create state for changing car
@@ -38,12 +39,25 @@ export default class ChooseTeslaSAdvanced extends Component {
     });
   };
 
+  changeWheel = (newWheel) => {
+    // Find current wheel in current state (this.state.carCurrent.wheels)
+    let obWheel = this.state.carCurrent.wheels.find(
+      (item) => item.idWheel === newWheel.idWheel
+    );
+    if (obWheel !== -1) {
+      // take srcImg from this.state.carCurrent.wheels
+      this.setState({
+        carCurrent: { ...this.state.carCurrent, srcImg: obWheel.srcImg },
+      });
+    }
+  };
+
   renderIcon = () => {
     return dataFeatures.map((item, index) => {
       return (
         <div
           onClick={() => this.changeCar(item)}
-          className="row border border-color-default mt-2 pt-2 pb-2 m-3"
+          className="row border border-color-default"
           key={index}
           style={{ cursor: "pointer" }}
         >
@@ -67,7 +81,12 @@ export default class ChooseTeslaSAdvanced extends Component {
   renderWheel = () => {
     return dataWheels.map((item, index) => {
       return (
-        <div className="row border" key={index}>
+        <div
+          style={{ cursor: "pointer" }}
+          onClick={() => this.changeWheel(item)}
+          className="row border"
+          key={index}
+        >
           <div className="col d-flex flex-row">
             <div className="p-2">
               <img style={{ height: "100%" }} src={item.img} alt={item.title} />
@@ -139,31 +158,31 @@ export default class ChooseTeslaSAdvanced extends Component {
                 <thead>
                   <tr>
                     <th>Color</th>
-                    <th>White</th>
+                    <th>{this.state.carCurrent.title}</th>
                   </tr>
                   <tr>
-                    <th>Price</th>
-                    <th>$112,990</th>
+                    <th> ">Price</th>
+                    <th>{this.state.carCurrent.price}</th>
                   </tr>
                   <tr>
                     <th>Engine Type</th>
-                    <th>Tri Motor All-Wheel Drive</th>
+                    <th>{this.state.carCurrent.engineType}</th>
                   </tr>
                   <tr>
                     <th>Range</th>
-                    <th>390 mi</th>
+                    <th>{this.state.carCurrent.range}</th>
                   </tr>
                   <tr>
                     <th>Peak Power</th>
-                    <th>1,020 hp</th>
+                    <th>{this.state.carCurrent.peakPower}</th>
                   </tr>
                   <tr>
                     <th>Acceleration</th>
-                    <th>1.99 s 0-60 mph</th>
+                    <th>{this.state.carCurrent.acceleration}</th>
                   </tr>
                   <tr>
                     <th>Top Speed</th>
-                    <th>200 mph</th>
+                    <th>{this.state.carCurrent.topSpeed}</th>
                   </tr>
                 </thead>
               </table>
