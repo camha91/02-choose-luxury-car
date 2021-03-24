@@ -1,10 +1,10 @@
 import "./App.css";
-import ChooseTeslaSAdvanced from "./component/ChooseTeslaSAdvanced/ChooseTeslaSAdvanced";
+import ChooseTeslaPractice from "./component/ChooseTeslaPractice";
 
 function App() {
   return (
     <div className="app">
-      <ChooseTeslaSAdvanced />
+      <ChooseTeslaPractice />
     </div>
   );
 }
